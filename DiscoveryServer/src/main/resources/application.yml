@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: DiscoveryServer
+server:  port: 8761 #default server port for the eureka discovery server
+#these are for dev purposes, since we dont have to create multiple instances of the discovery server
+eureka:  client:    fetch-registry: false
+    register-with-eureka: false
